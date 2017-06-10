@@ -1,0 +1,20 @@
+/*
+Reference:
+    https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+    https://www.typescriptlang.org/docs/handbook/compiler-options.html
+*/
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true, //Any must be specified if true
+        "sourceMap": true, //Generate a map file for debugging
+        "noEmitOnError" :true, //Do not create a js file when compilation fails
+        "strictNullChecks": true, //A variable can not be null
+        "noUnusedParameters": true, //All parameters must be used
+        "noUnusedLocals": true //All local variables must be used
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
