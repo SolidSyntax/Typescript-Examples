@@ -1,0 +1,21 @@
+/*
+Reference:
+    https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+    https://www.typescriptlang.org/docs/handbook/compiler-options.html
+*/
+{
+    "compilerOptions": {
+        // handled by webpack "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true, //Any must be specified if true
+        // handled by webpack "sourceMap": true, //Generate a map file for debugging
+        "noEmitOnError" :true, //Do not create a js file when compilation fails
+        "strictNullChecks": true, //A variable can not be null
+        "noUnusedParameters": true, //All parameters must be used
+        "noUnusedLocals": true //All local variables must be used
+    }
+// Handled by webpack,
+//    "exclude": [
+//        "node_modules" // Do not compile files in this directory
+//    ]
+}

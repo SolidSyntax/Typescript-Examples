@@ -1,0 +1,24 @@
+{
+  "name": "typescript-complete-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^2.0.46",
+    "lite-server": "^2.2.2",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "build": "webpack -d --watch",
+    "build:prod": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC"
+}
